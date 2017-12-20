@@ -5,11 +5,12 @@ w - jump by starts of words
 e - jump to end of words
 b - jump backwards by words
 0 - (zero) start of line
-^ - first non-blank character of line
 $ - end of line
 chaining: <number><command>
 Ctrl+d - down by half of the screeen
 Ctrl+u - up by half of the screeen
+gg - go to the begging of the file
+G - go to the end of the file
 
 Insert mode:
 
@@ -23,23 +24,20 @@ Esc - exit insert mode
 
 Editing:
 
+u - undo
 r - replace a single character
 cc - change (replace) an entire line
-cw - change (replace) to the end of word
 c$ - change (replace) to the end of line
-xp - transpose two letters (delete and paste)
-u - undo
-. - repeat last command
-~ switch case
-
-Cut and Paste
-
-yy - yank (copy) a line
-2yy - yank 2 lines
+cw - change (replace) to the end of word
+x - delete (cut) current character
 p - put (paste) the clipboard after cursor
+xp - transpose two letters (delete and paste)
 dd - delete (cut) a line
 dw - delete (cut) a word
-x - delete (cut) current character
+yy - yank (copy) a line
+2yy - yank 2 lines
+. - repeat last command
+~ switch case
 
 Marking text (visual mode)
 
@@ -47,18 +45,21 @@ v - visual mode
 V - start Linewise visual mode
 Ctrl+v - start visual block mode
 
-Exiting
-
-:w - write (save) a file
-:wq - write and quit
-:q! - quit and throw away changes
-
 Search/Replace
 
 /pattern - search for pattern
 ?pattern - search backward for pattern
 n - repeat search in same direction
 :%s/old/new/g - replace all old with new throughout the file
+
+Exiting
+
+:w - write (save) a file
+:wq - write and quit
+:q! - quit and throw away changes
+
+
+Multiple files
 
 :sp <filename> - split file horizontally
 :vsp <filename> - split file vertically
