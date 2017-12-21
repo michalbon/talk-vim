@@ -1,3 +1,9 @@
+Exiting
+
+:w - write (save) a file
+:wq - write and quit
+:q! - quit and throw away changes
+
 Cursor movement
 
 hjkl - left/down/up/right
@@ -11,6 +17,7 @@ Ctrl+d - down by half of the screeen
 Ctrl+u - up by half of the screeen
 gg - go to the begging of the file
 G - go to the end of the file
+:<number> - go to line <number>
 
 Insert mode:
 
@@ -52,13 +59,6 @@ Search/Replace
 n - repeat search in same direction
 :%s/old/new/g - replace all old with new throughout the file
 
-Exiting
-
-:w - write (save) a file
-:wq - write and quit
-:q! - quit and throw away changes
-
-
 Multiple files
 
 :sp <filename> - split file horizontally
@@ -68,3 +68,4 @@ Multiple files
 :gT - previous tab
 
 vimdiff <file_1> <file_2> - a useful tool to compare files
+
