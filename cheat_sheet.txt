@@ -51,6 +51,7 @@ Marking text (visual mode)
 v - visual mode
 V - start Linewise visual mode
 Ctrl+v - start visual block mode
+o - move cursor to the opposite end of selection
 
 Search/Replace
 
@@ -64,8 +65,8 @@ Multiple files
 :sp <filename> - split file horizontally
 :vsp <filename> - split file vertically
 :tabe <filename>- open file in a new tab
-:gt - next tab
-:gT - previous tab
+gt - next tab
+gT - previous tab
 
 vimdiff <file_1> <file_2> - a useful tool to compare files
 
