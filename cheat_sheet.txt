@@ -69,4 +69,3 @@ gt - next tab
 gT - previous tab
 
 vimdiff <file_1> <file_2> - a useful tool to compare files
-
